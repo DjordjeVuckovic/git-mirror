@@ -1,0 +1,18 @@
+mirrors:                    # Array of mirror configurations
+  - name: string           # Human-readable name for the mirror
+    target:                # Source repository to mirror from
+      url: string          # Git repository URL
+      auth:                # Authentication configuration
+        method: string     # "token", "ssh", "basic", or "none"
+        token: string      # For token method
+        username: string   # For basic method
+        password: string   # For basic method
+        ssh_key: string    # For ssh method (path to private key)
+    source:                # Destination repository to mirror to
+      url: string          # Git repository URL
+      auth:                # Authentication configuration
+        method: string     # "token", "ssh", "basic", or "none"
+        token: string      # For token method
+        username: string   # For basic method
+        password: string   # For basic method
+        ssh_key: string    # For ssh method (path to private key)
